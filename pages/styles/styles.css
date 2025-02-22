@@ -1,0 +1,168 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E90FF;
+}
+
+header {
+    height: 100vh;
+    font-weight: bold;
+}
+
+h2 {
+    color: #1E90FF;
+}
+
+h3 {
+    color: #A9A9A9;
+}
+
+h4 {
+    color: #D3D3D3;
+}
+
+h5 {
+   color: #E8E8E8;
+}
+
+header h2 {
+    font-size: 4em;
+    color: #FFFFFF;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+header p {
+    font-size: 2em;
+    color: #D3D3D3;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+section h2 {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.card {
+    width: 50%;
+    border: none
+}
+
+/* Align odd cards to the left */
+#storyline .card:nth-child(odd) {
+    align-self: flex-end;
+}
+
+/* Align even cards to the right */
+#storyline .card:nth-child(even) {
+    align-self: flex-start;
+}
+
+
+.card h4 {
+    margin-left: 15px;
+}
+
+.card h5 {
+    margin-left: 30px;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.position {
+    color: #FFA500;
+}
+
+#carousel nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel button {
+    margin-right: 15px;
+}
+
+#carousel button:last-child() {
+    margin-right: 0px;
+}
+
+#carousel {
+    margin-bottom: 60px;
+}
+
+#project-content {
+    margin-top: 20px;
+    display: none;
+}
+
+#project-content h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFA500;
+}
+
+#project-content a {
+    text-decoration: none;
+    color: #FFA500;
+}
+
+#project-content svg {
+    width: 20px;
+    height: 20px;
+}
+
+#project-content div {
+    display: flex;
+}
+
+#project-content img {
+    border: 1px black solid;
+    box-shadow: 5px 5px 10px rgba(169, 169, 169, 0.5);
+    width: 450px;
+    height: 250px;
+}
+
+#project-content p {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #storyline .card:nth-child(odd) {
+        align-self: center;
+    }
+
+    #storyline .card:nth-child(even) {
+        align-self: center;
+    }
+
+    .card {
+        width: 100%;
+        border: none
+    }
+
+    #project-content div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

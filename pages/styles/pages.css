@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    padding: 25px;
+    height: auto;
+}
+
+header img,
+header svg {
+    width: 60px;
+    height: 50px;
+    color: white
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 0px 40px 0px;
+}
+
+main img {
+    width: 80%;
+}
+
+main p {
+    width: 60%;
+    text-align: justify;
+}
+
+#stack {
+    margin: 5px 0px 5px 0px;
+}
+
+#stack svg {
+    width: 16px;
+    height: 16px;
+}
