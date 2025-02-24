@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     myButton = document.getElementById("my");
     lytButton = document.getElementById("lyt");
     bfButton = document.getElementById("bf");
+    mdiButton = document.getElementById("mdi");
 
     // Add event lister on click on buttons above to display summarize
     // of each project + Re-direct to new page
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         myButton.setAttribute("disabled", "");
         lytButton.removeAttribute("disabled");
         bfButton.removeAttribute("disabled");
+        mdiButton.removeAttribute("disabled");
 
         updateCarouselCard(
             title = "MealYou",
@@ -55,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         myButton.removeAttribute("disabled");
         lytButton.setAttribute("disabled", "");
         bfButton.removeAttribute("disabled");
+        mdiButton.removeAttribute("disabled");
 
         updateCarouselCard(
             title = "Learn Your Tables",
@@ -73,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         myButton.removeAttribute("disabled");
         lytButton.removeAttribute("disabled");
         bfButton.setAttribute("disabled", "");
+        mdiButton.removeAttribute("disabled");
 
         updateCarouselCard(
             title = "Bird Feaver",
@@ -82,6 +86,25 @@ document.addEventListener('DOMContentLoaded', function() {
                            Each avoided obstacles increases his score by +1.",
             image = "imgs/birdfeaver.jpg",
             ref = "pages/birdfeaver.html"
+        );
+    });
+
+    mdiButton.addEventListener('click', (e) => {
+        myButton.removeAttribute("disabled");
+        lytButton.removeAttribute("disabled");
+        bfButton.removeAttribute("disabled");
+        mdiButton.setAttribute("disabled", "");
+
+        updateCarouselCard(
+            title = "Million $ Idea",
+            description = "This website lets you share great ideas you can't \
+                          or don't want to develop yourself and discover \
+                          others' ideas to bring to life. Whether you're \
+                          seeking inspiration or hoping someone will build \
+                          your vision, Million $ Idea connects creativity \
+                          with execution!",
+            image = "imgs/million-dollars-idea.png",
+            ref = "pages/million-dollars-idea.html"
         );
     });
 });
