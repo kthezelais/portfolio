@@ -11,6 +11,18 @@ header {
     font-weight: bold;
 }
 
+#anchor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration:none; 
+    cursor:pointer;
+    margin-top: 25px;
+    color: white;
+    font-size: 1.3em;
+}
+
 h2 {
     color: #1E90FF;
 }
