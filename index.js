@@ -7,9 +7,11 @@ function updateCarouselCard(title, description, image, ref) {
     h3_tag = parent.getElementsByTagName("h3")[0];
     ref_tag = parent.getElementsByTagName("a")[0];
     img_tag = parent.getElementsByTagName("img")[0];
+    img_ref = img_tag.parentNode;
     p_tag = parent.getElementsByTagName("p")[0];
 
     ref_tag.setAttribute("href", ref);
+    img_ref.setAttribute("href", ref);
 
     h3_tag.innerHTML = title;
     h3_tag.appendChild(ref_tag);
